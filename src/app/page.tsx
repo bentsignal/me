@@ -1,7 +1,11 @@
+import Socials from "@/components/socials";
+import ThemeToggle from "@/components/theme-toggle";
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-2xl font-bold">coming soon</h1>
+    <div className="flex h-screen flex-col items-center justify-center">
+      <ThemeToggle />
+      <Socials />
     </div>
   );
 }

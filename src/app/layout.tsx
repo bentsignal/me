@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import Providers from "@/components/providers";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -19,10 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${openSans.variable} font-main antialiased`}
-      >
-        {children}
+      <body className={`${openSans.variable} font-main antialiased`}>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
