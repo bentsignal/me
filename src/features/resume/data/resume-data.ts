@@ -1,4 +1,4 @@
-import type { Experience, Institution } from "@/features/resume/types";
+import type { Experience, Institution, Project } from "@/features/resume/types";
 
 export const personalInfo = {
   name: "Shawn Rodgers",
@@ -53,10 +53,43 @@ export const education: Institution[] = [
           endDate: new Date("2023-08-02"),
         },
         bullets: [
-          "Awarded 1st Place in the Advanced Machine Learning bracket at the UVM CS Fair 2022",
-          "Awarded 2nd Place in the Beginner Web Development bracket at the UVM CS Fair 2019",
+          "Awarded 1st Place in the Advanced Machine Learning bracket at the 2022 UVM CS Fair",
+          "Awarded 2nd Place in the Beginner Web Development bracket at the 2019 UVM CS Fair",
         ],
       },
+    ],
+  },
+];
+
+export const projects: Project[] = [
+  {
+    name: "SYNQ",
+    url: "www.synq.cc",
+    role: "Sole Developer",
+    dates: {
+      startDate: new Date("2024-05-02"),
+    },
+    description:
+      "A mobile app that allows users to modify, share, and listen to their audio files",
+    bullets: [
+      "Built with React Native & Expo",
+      "1000+ downloads on the App Store",
+      "50+ premium subscribers",
+    ],
+  },
+  {
+    name: "QBE",
+    url: "www.qbe.sh",
+    role: "Sole Developer",
+    dates: {
+      startDate: new Date("2025-06-02"),
+    },
+    description:
+      "An AI-powered chat application, created for a hackathon hosted by Theo from t3.gg",
+    bullets: [
+      "Built with Next.js, deployed to Vercel",
+      "Delivers users access to dozens of models from OpenAI, Google, Anthropic, and others",
+      "Driven by a custom agent that can perform tasks like searching the web, writing code, and more",
     ],
   },
 ];

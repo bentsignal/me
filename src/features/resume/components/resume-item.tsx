@@ -36,7 +36,7 @@ function SubItem({ subItem }: { subItem: SubItemProps }) {
       <h3 className="text-sm font-semibold">{subItem.title}</h3>
       <p className="text-muted-foreground text-sm">{subItem.subtitle}</p>
       {subItem.description && (
-        <p className="text-muted-foreground text-sm">{subItem.description}</p>
+        <p className="pt-2 pb-1 text-sm font-semibold">{subItem.description}</p>
       )}
       {subItem.bullets && (
         <ul className="list-disc py-1 pl-4 text-sm">

@@ -1,14 +1,20 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { experiences, personalInfo, education } from "@/features/resume/data";
+import {
+  experiences,
+  personalInfo,
+  education,
+  projects,
+} from "@/features/resume/data";
 import Experience from "@/features/resume/components/experience";
 import Section from "@/features/resume/components/section";
 import ThemeToggle from "@/components/theme-toggle";
 import Institution from "@/features/resume/components/institution";
+import Project from "@/features/resume/components/project";
 
 export default function About() {
   return (
-    <div className="mx-4 my-4 flex h-screen flex-col items-center justify-start gap-4 sm:mx-0 sm:my-0 sm:justify-center sm:gap-6">
+    <div className="mx-4 my-4 flex h-screen flex-col items-center justify-start gap-4 sm:gap-6">
       <ThemeToggle />
       <Card>
         <CardHeader className="items-center justify-center text-center">
@@ -22,6 +28,11 @@ export default function About() {
           <Section title="Experience">
             {experiences.map((experience) => (
               <Experience key={experience.company} experience={experience} />
+            ))}
+          </Section>
+          <Section title="Projects">
+            {projects.map((project) => (
+              <Project key={project.name} project={project} />
             ))}
           </Section>
           <Section title="Education">

@@ -25,3 +25,12 @@ export interface Institution {
   location: string;
   programs: Program[];
 }
+
+export interface Project {
+  name: string;
+  url: string;
+  role: string;
+  dates: DateRange;
+  description: string;
+  bullets: string[];
+}
