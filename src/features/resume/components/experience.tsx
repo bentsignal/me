@@ -6,14 +6,16 @@ import {
 
 export default function Experience({ experience }: { experience: Experience }) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col">
       <h2 className="text-md font-bold">{experience.company}</h2>
-      <p className=" text-sm">
+      <p className=" text-muted-foreground text-sm">
         {getMonthsAtCompanyString(experience.positions)}
       </p>
-      {experience.positions.map((position) => (
-        <Position key={position.title} position={position} />
-      ))}
+      <div className="border-muted-foreground my-2 flex flex-col gap-2 border-l-1 pl-4">
+        {experience.positions.map((position) => (
+          <Position key={position.title} position={position} />
+        ))}
+      </div>
     </div>
   );
 }

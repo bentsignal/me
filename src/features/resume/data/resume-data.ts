@@ -1,5 +1,11 @@
 import type { Experience } from "@/features/resume/types";
 
+export const personalInfo = {
+  name: "Shawn Rodgers",
+  title: "Software Engineer",
+  email: "me@bentsignal.com",
+};
+
 export const experiences: Experience[] = [
   {
     company: "Gardener's Supply Company",
@@ -8,10 +14,10 @@ export const experiences: Experience[] = [
         title: "Software Engineer",
         startDate: new Date("2024-04-02"),
         bullets: [
-          "Impelmented features and fixed bugs across the web stack",
-          "Lead the redesign of the mobile & header navigation",
-          `Spearheaded the transition of the React codebase from javascript
-           class components to typescript functional components`,
+          "Impelmented features and bug fixes across the web stack",
+          "Lead the redesign of the header & navigation",
+          "Moved the team from writing class components in javascript to functional components in typescript",
+          "Created an automated service to feed data from the data lake into a 3rd party marketing platform",
         ],
       },
       {
@@ -19,9 +25,9 @@ export const experiences: Experience[] = [
         startDate: new Date("2022-06-02"),
         endDate: new Date("2022-08-02"),
         bullets: [
-          "Designed & developed a full stack web application using the MERN stack",
+          "Designed & developed a web application using the MERN stack",
           "Stored documents in Azure's Cosmos DB",
-          "Deployed the application to Azure's App Service",
+          "Deployed the application as an Azure Web App",
         ],
       },
     ],

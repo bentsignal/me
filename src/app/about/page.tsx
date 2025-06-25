@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { experiences } from "@/features/resume/data";
+import { experiences, personalInfo } from "@/features/resume/data";
 import Experience from "@/features/resume/components/experience";
 import Section from "@/features/resume/components/section";
 import ThemeToggle from "@/components/theme-toggle";
@@ -11,10 +11,10 @@ export default function About() {
       <ThemeToggle />
       <Card>
         <CardHeader className="items-center justify-center text-center">
-          <h1 className="text-xl font-bold">Shawn Rodgers</h1>
-          <p className="text-muted-foreground text-sm">Software Engineer</p>
-          <Link href="mailto:me@bentsignal.com" className="text-sm">
-            me@bentsignal.com
+          <h1 className="text-xl font-bold">{personalInfo.name}</h1>
+          <p className="text-muted-foreground text-sm">{personalInfo.title}</p>
+          <Link href={`mailto:${personalInfo.email}`} className="text-sm">
+            {personalInfo.email}
           </Link>
         </CardHeader>
         <CardContent className="flex max-w-[800px] flex-col gap-6 px-4 sm:min-w-lg sm:px-8">
