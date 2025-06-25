@@ -21,4 +21,11 @@
   .no-print {
     display: none !important;
   }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-image: none !important;
+    /* Temporarily disable anything that might make browser rasterize */
+  }
 }
