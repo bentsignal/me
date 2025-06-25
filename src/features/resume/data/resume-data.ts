@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
         ],
       },
       {
-        title: "Software Engineer Intern",
+        title: "Software Engineer - Intern",
         startDate: new Date("2022-06-02"),
         endDate: new Date("2022-08-02"),
         bullets: [
