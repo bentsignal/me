@@ -11,12 +11,13 @@ import Section from "@/features/resume/components/section";
 import ThemeToggle from "@/components/theme-toggle";
 import Institution from "@/features/resume/components/institution";
 import Project from "@/features/resume/components/project";
+import "@/features/resume/styles/print.css";
 
 export default function About() {
   return (
-    <div className="mx-4 my-12 flex flex-col items-center justify-start gap-4 sm:gap-6">
+    <div className="mx-4 my-12 flex flex-col items-center justify-start gap-4 sm:gap-6 print:m-0">
       <ThemeToggle />
-      <Card>
+      <Card className="print:border-none print:shadow-none">
         <CardHeader className="items-center justify-center text-center">
           <h1 className="text-xl font-bold">{personalInfo.name}</h1>
           <p className="text-muted-foreground text-sm">{personalInfo.title}</p>
