@@ -1,4 +1,4 @@
-import type { Institution, Program } from "@/features/resume/types";
+import type { Institution } from "@/features/resume/types";
 import { getDatesAndMonthsFromRange } from "@/lib/time-utils";
 import ResumeItem from "@/features/resume/components/resume-item";
 
