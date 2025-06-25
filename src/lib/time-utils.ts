@@ -7,8 +7,8 @@ export const formatDate = (date: Date) => {
 
 // get the number of months between two dates
 export function monthsBetweenDates(start: Date, end: Date): number {
-  let years = end.getFullYear() - start.getFullYear();
-  let months = end.getMonth() - start.getMonth();
+  const years = end.getFullYear() - start.getFullYear();
+  const months = end.getMonth() - start.getMonth();
   let diff = years * 12 + months;
   if (end.getDate() >= start.getDate()) {
     diff += 1;
