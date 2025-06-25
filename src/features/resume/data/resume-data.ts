@@ -17,8 +17,8 @@ export const experiences: Experience[] = [
           startDate: new Date("2024-04-02"),
         },
         bullets: [
-          "Impelmented features and bug fixes across the web stack",
-          "Lead the redesign of the header & navigation",
+          "Implemented features and bug fixes across the web stack",
+          "Led the redesign of the header & navigation",
           "Moved the team from writing class components in javascript to functional components in typescript",
           "Created an automated service to feed data from the data lake into a 3rd party marketing platform",
         ],
@@ -84,11 +84,10 @@ export const projects: Project[] = [
     dates: {
       startDate: new Date("2025-06-02"),
     },
-    description:
-      "An AI-powered chat application, created for a hackathon hosted by Theo from t3.gg",
+    description: "An AI chat app, created for a 10 day hackathon",
     bullets: [
       "Built with Next.js, deployed to Vercel",
-      "Delivers users access to dozens of models from OpenAI, Google, Anthropic, and others",
+      "Gives users access to dozens of models from providers like OpenAI, Google, and Anthropic",
       "Driven by a custom agent that can perform tasks like searching the web, writing code, and more",
     ],
   },

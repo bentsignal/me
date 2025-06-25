@@ -14,7 +14,7 @@ import Project from "@/features/resume/components/project";
 
 export default function About() {
   return (
-    <div className="mx-4 my-4 flex h-screen flex-col items-center justify-start gap-4 sm:gap-6">
+    <div className="mx-4 my-12 flex flex-col items-center justify-start gap-4 sm:gap-6">
       <ThemeToggle />
       <Card>
         <CardHeader className="items-center justify-center text-center">
