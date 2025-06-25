@@ -1,11 +1,27 @@
+import type { DateRange } from "@/types";
+
 export interface Experience {
   company: string;
+  location: string;
   positions: Position[];
 }
 
 export interface Position {
   title: string;
-  startDate: Date;
-  endDate?: Date;
+  dates: DateRange;
   bullets?: string[];
+}
+
+export interface Program {
+  degree: string;
+  dates: DateRange;
+  degreeAbbreviation?: string;
+  major?: string;
+  bullets?: string[];
+}
+
+export interface Institution {
+  name: string;
+  location: string;
+  programs: Program[];
 }

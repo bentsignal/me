@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { experiences, personalInfo } from "@/features/resume/data";
+import { experiences, personalInfo, education } from "@/features/resume/data";
 import Experience from "@/features/resume/components/experience";
 import Section from "@/features/resume/components/section";
 import ThemeToggle from "@/components/theme-toggle";
+import Institution from "@/features/resume/components/education";
 
 export default function About() {
   return (
@@ -24,6 +25,11 @@ export default function About() {
                 key={`${experience.company}-${experience.positions[0].title}`}
                 experience={experience}
               />
+            ))}
+          </Section>
+          <Section title="Education">
+            {education.map((institution) => (
+              <Institution key={institution.name} institution={institution} />
             ))}
           </Section>
         </CardContent>
