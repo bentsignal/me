@@ -10,23 +10,23 @@ export default function Socials() {
     {
       icon: "siX" as icon,
       href: "https://x.com/bentsignal",
-      size: 24,
+      size: 18,
     },
     {
       icon: "siInstagram" as icon,
       href: "https://instagram.com/bentsignal",
-      size: 24,
+      size: 18,
     },
 
     {
       icon: "siGithub" as icon,
       href: "https://github.com/bentsignal",
-      size: 24,
+      size: 18,
     },
   ];
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center gap-4 sm:flex-row">
+    <div className="flex items-center justify-center gap-4 flex-row">
       {socials.map((social) => (
         <Link
           href={social.href}
