@@ -4,7 +4,7 @@ import { experiences, personalInfo, education } from "@/features/resume/data";
 import Experience from "@/features/resume/components/experience";
 import Section from "@/features/resume/components/section";
 import ThemeToggle from "@/components/theme-toggle";
-import Institution from "@/features/resume/components/education";
+import Institution from "@/features/resume/components/institution";
 
 export default function About() {
   return (
@@ -21,10 +21,7 @@ export default function About() {
         <CardContent className="flex max-w-[800px] flex-col gap-6 px-4 sm:min-w-lg sm:px-8">
           <Section title="Experience">
             {experiences.map((experience) => (
-              <Experience
-                key={`${experience.company}-${experience.positions[0].title}`}
-                experience={experience}
-              />
+              <Experience key={experience.company} experience={experience} />
             ))}
           </Section>
           <Section title="Education">
