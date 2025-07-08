@@ -70,7 +70,7 @@ export const projects: Project[] = [
       startDate: new Date("2024-05-02"),
     },
     description:
-      "A mobile app that allows users to modify, share, and listen to their audio files",
+      "A mobile app for users to modify, share, and listen to their audio files",
     bullets: [
       "Built with React Native & Expo",
       "1000+ downloads on the App Store",
