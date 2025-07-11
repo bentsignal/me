@@ -1,18 +1,33 @@
+import Link from "next/link";
+
 interface ResumeItemProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
+  url?: string;
   subItems: SubItemProps[];
 }
 
 export default function ResumeItem({
   title,
   subtitle,
+  url,
   subItems,
 }: ResumeItemProps) {
   return (
     <div className="flex flex-col">
       <h2 className="text-md font-bold">{title}</h2>
-      <p className="text-muted-foreground text-sm">{subtitle}</p>
+
+      {url && (
+        <Link
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground text-sm underline"
+        >
+          {url.replace("https://", "")}
+        </Link>
+      )}
+      {subtitle && <p className="text-muted-foreground text-sm">{subtitle}</p>}
       <div className="border-muted-foreground my-2 flex flex-col gap-2 border-l-1 pl-4">
         {subItems.map((subItem) => (
           <SubItem key={subItem.title} subItem={subItem} />

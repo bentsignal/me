@@ -2,7 +2,7 @@ import type { DateRange } from "@/types";
 
 export interface Experience {
   company: string;
-  location: string;
+  subtitle?: string;
   positions: Position[];
 }
 

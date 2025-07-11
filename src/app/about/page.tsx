@@ -21,7 +21,10 @@ export default function About() {
         <CardHeader className="items-center justify-center text-center">
           <h1 className="text-xl font-bold">{personalInfo.name}</h1>
           <p className="text-muted-foreground text-sm">{personalInfo.title}</p>
-          <Link href={`mailto:${personalInfo.email}`} className="text-sm">
+          <Link
+            href={`mailto:${personalInfo.email}`}
+            className="text-sm font-semibold"
+          >
             {personalInfo.email}
           </Link>
         </CardHeader>

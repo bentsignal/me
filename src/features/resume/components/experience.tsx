@@ -6,7 +6,7 @@ export default function Experience({ experience }: { experience: Experience }) {
   return (
     <ResumeItem
       title={experience.company}
-      subtitle={experience.location}
+      subtitle={experience.subtitle}
       subItems={experience.positions.map((position) => ({
         title: position.title,
         subtitle: getDatesAndMonthsFromRange(position.dates),

@@ -6,7 +6,7 @@ export default function Project({ project }: { project: Project }) {
   return (
     <ResumeItem
       title={project.name}
-      subtitle={project.url}
+      url={project.url}
       subItems={[
         {
           title: project.role,

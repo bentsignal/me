@@ -3,13 +3,13 @@ import type { Experience, Institution, Project } from "@/features/resume/types";
 export const personalInfo = {
   name: "Shawn Rodgers",
   title: "Software Engineer",
-  email: "me@bentsignal.com",
+  email: "shawn@bsx.sh",
 };
 
 export const experiences: Experience[] = [
   {
     company: "Gardener's Supply Company",
-    location: "Burlington, VT",
+    subtitle: "Burlington, VT",
     positions: [
       {
         title: "Software Engineer",
@@ -18,8 +18,10 @@ export const experiences: Experience[] = [
         },
         bullets: [
           "Implemented features and bug fixes across the web stack",
-          "Led the redesign of the header & navigation",
-          "Moved the team from writing class components in javascript to functional components in typescript",
+          `Transitioned the team from writing class components in javascript to
+          functional components in typescript, introducing type safety to the frontend`,
+          "Led the upgrade from React 15 to 18, allowing us to finally leverage the use of hooks",
+          "Led the redesign of the header & navigation on mobile",
           "Created an automated service to feed data from the data lake into a 3rd party marketing platform",
         ],
       },
@@ -64,7 +66,7 @@ export const education: Institution[] = [
 export const projects: Project[] = [
   {
     name: "SYNQ",
-    url: "www.synq.cc",
+    url: "https://www.synq.cc",
     role: "Sole Developer",
     dates: {
       startDate: new Date("2024-05-02"),
@@ -79,16 +81,18 @@ export const projects: Project[] = [
   },
   {
     name: "QBE",
-    url: "www.qbe.sh",
+    url: "https://www.qbe.sh",
     role: "Sole Developer",
     dates: {
       startDate: new Date("2025-06-02"),
     },
-    description: "An AI chat app, created for a 10 day hackathon",
+    description: "An AI chat app built for Web & XR",
     bullets: [
+      "Delivers complementary 2D & 3D interfaces for LLM interaction",
+      "v0 completed in 10 days for a hackathon hosted by t3.gg",
       "Built with Next.js, deployed to Vercel",
-      "Gives users access to dozens of models from providers like OpenAI, Google, and Anthropic",
-      "Driven by a custom agent that can perform tasks like searching the web, writing code, and more",
+      "Leverages models from foundational providers such as OpenAI, Google, and Anthropic",
+      "Driven by custom agents that can perform tasks such as searching the web, writing code, and more",
     ],
   },
 ];
