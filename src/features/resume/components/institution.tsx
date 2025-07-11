@@ -12,7 +12,7 @@ export default function Institution({
       title={institution.name}
       subtitle={institution.location}
       subItems={institution.programs.map((program) => ({
-        title: program.degree,
+        title: `${program.degree} - ${program.degreeAbbreviation}, ${program.major}`,
         subtitle: getDatesAndMonthsFromRange(program.dates),
         bullets: program.bullets,
       }))}

@@ -18,10 +18,10 @@ export const experiences: Experience[] = [
         },
         bullets: [
           "Implemented features and bug fixes across the web stack",
-          `Transitioned the team from writing class components in javascript to
-          functional components in typescript, introducing type safety to the frontend`,
-          "Led the upgrade from React 15 to 18, allowing us to finally leverage the use of hooks",
           "Led the redesign of the header & navigation on mobile",
+          `Transitioned the team from writing class components in JavaScript to
+          functional components in TypeScript, introducing type safety to the frontend`,
+          "Led the upgrade from React 15 to 18, allowing us to leverage the use of hooks",
           "Created an automated service to feed data from the data lake into a 3rd party marketing platform",
         ],
       },
@@ -32,7 +32,7 @@ export const experiences: Experience[] = [
           endDate: new Date("2022-08-02"),
         },
         bullets: [
-          "Designed & developed a web application using the MERN stack",
+          "Designed & developed a customer facing application using the MERN stack",
           "Stored documents in Azure's Cosmos DB",
           "Deployed the application as an Azure Web App",
         ],
@@ -92,7 +92,7 @@ export const projects: Project[] = [
       "v0 completed in 10 days for a hackathon hosted by t3.gg",
       "Built with Next.js, deployed to Vercel",
       "Leverages models from foundational providers such as OpenAI, Google, and Anthropic",
-      "Driven by custom agents that can perform tasks such as searching the web, writing code, and more",
+      "Driven by custom agents that can perform tasks like searching the web for relevant information to aid in their responses",
     ],
   },
 ];
