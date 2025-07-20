@@ -14,6 +14,7 @@ export default function Nav() {
         >
           <Link href="/about">[ about ]</Link>
           <Link href="/blog">[ blog ]</Link>
+          <Link href="/projects">[ projects ]</Link>
         </div>
       </CardContent>
     </Card>
