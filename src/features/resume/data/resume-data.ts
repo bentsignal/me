@@ -17,12 +17,12 @@ export const experiences: Experience[] = [
           startDate: new Date("2024-04-02"),
         },
         bullets: [
-          "Implemented features and bug fixes across the web stack",
-          "Led the redesign of the header & navigation on mobile",
-          `Transitioned the team from writing class components in JavaScript to
+          "Implemented features and bug fixes across the web stack (React and .NET)",
+          "Led the redesign of the header & navigation",
+          `Transitioned the team from writing class components in JavaScript, to
           functional components in TypeScript, introducing type safety to the frontend`,
-          "Led the upgrade from React 15 to 18, allowing us to leverage the use of hooks",
-          "Created an automated service to feed data from the data lake into a 3rd party marketing platform",
+          `Led the upgrade from React 15 to 18, allowing us to use hooks, and benefit from 
+          the inherent performance gains of concurrent rendering`,
         ],
       },
       {
@@ -86,13 +86,12 @@ export const projects: Project[] = [
     dates: {
       startDate: new Date("2025-06-02"),
     },
-    description: "An AI chat app built for Web & XR",
+    description: "An AI chat app built for the Web",
     bullets: [
-      "Delivers complementary 2D & 3D interfaces for LLM interaction",
       "v0 completed in 10 days for a hackathon hosted by t3.gg",
-      "Built with Next.js, deployed to Vercel",
-      "Leverages models from foundational providers such as OpenAI, Google, and Anthropic",
-      "Driven by custom agents that can perform tasks like searching the web for relevant information to aid in their responses",
+      "Built with Next.js & Convex, deployed to Vercel",
+      "Leverages models from frontier providers such as OpenAI, Google, and Anthropic",
+      "Driven by an agent that can search the web, analyze files, retrieve weather data, and more",
     ],
   },
 ];

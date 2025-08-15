@@ -2,7 +2,7 @@
 @media print {
   @page {
     margin: 0; /* Adjust margins if needed, or set to 0 to remove default browser margins */
-    size: 215.9mm calc(350mm);
+    size: 215.9mm calc(340mm);
   }
 
   body {
